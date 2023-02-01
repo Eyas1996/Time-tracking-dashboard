@@ -29,7 +29,7 @@ async function fetchData() {
     imgholder.classList.add("image");
     // Img 
     let img = document.createElement("img");
-    img.src = `./images/icon-${myData.title.replaceAll(" ", "-")}.svg`;
+    img.src = `./images/icon-${myData.title.replaceAll(" ", "-").toLowerCase()}.svg`;
     img.alt = `${myData.title.replaceAll(" ", "-").toLowerCase()}`;
 
     // content in Card
